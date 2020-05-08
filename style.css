@@ -87,6 +87,8 @@ h4 {
   text-align: center;
   justify-content: center;
   align-items: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .New-Rules {
@@ -108,6 +110,7 @@ h4 {
   padding:  10px 25px;
   letter-spacing: 1.5px;
   text-transform: uppercase;
+  margin-bottom: 25px;
 }
 
 .btn-a:active {
@@ -264,6 +267,28 @@ h4 {
 
 // New Addition
 
+.like {
+  margin-top: 35px;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  border-radius: 50%;
+  background: linear-gradient(145deg, #1f242c, #242b34);
+  box-shadow:  7px 7px 32px #161a20,
+               -7px -7px 32px #2e3642;
+}
+
+.like:active{
+    transform: scale(0.8);
+}
+.like:focus {
+  outline: none;
+}
 
 
 //Responsiveness

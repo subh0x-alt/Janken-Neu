@@ -9,7 +9,17 @@ const winner = document.getElementById('winner');
 const newr = document.getElementById('New-Rules');
 const closer = document.getElementById('close')
 
+const countEl = document.getElementById('count');
 
+updateVisitCount();
+
+function updateVisitCount() {
+	fetch('https://api.countapi.xyz/update/subhrajit91939/github/?amount=1')
+	.then(res => res.json())
+	.then(res => {
+		countEl.innerHTML = res.value;
+	})
+}
 
 document.getElementById('rulesopen').addEventListener('click' , () => {
     newr.style.display = "flex";
@@ -87,4 +97,5 @@ function updateSelection(selectionEl, choice) {
   selectionEl.classList.add(`btn-${choice}`);
   img.src = `icon-${choice}.svg`;
   img.alt = choice;
+  img.class = choice;
 }
