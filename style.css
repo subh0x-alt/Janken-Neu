@@ -1,0 +1,294 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;600;700&display=swap");
+
+html {
+  height: 100%
+}
+
+body {
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  color: #fff;
+  background: #222831;
+  height: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.container {
+   margin: 0 auto;
+   width: 600px;
+   max-width: 100%;
+   justify-content: space-around;
+   transform: scale(0.8);
+}
+
+header {
+  border-radius: 20px;
+  background: linear-gradient(145deg, #1f242c, #242b34);
+  box-shadow:  12px 12px 24px #1d222a,
+             -12px -12px 24px #272e38;
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 30px;
+  align-items: center;
+  margin: 50px 0;
+}
+
+h1{
+  font-size: 2.25rem;
+  margin: 0;
+  display: flex;
+  line-height: 0.8;
+  position: relative;
+  flex-direction: column;
+  text-transform: uppercase;
+}
+
+h2 {
+  color: #fff;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  line-height: 1.5;
+  position: relative;
+  flex-direction: column;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 0;
+}
+
+
+h4 {
+  color: #fff;
+  letter-spacing: 3.5px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+
+.score-container {
+  background-color: #222831;
+  border-radius: 10px;
+  padding: 15px 30px;
+  box-shadow: 20px 20px 35px #121212,
+              -20px -20px 35px #222831;
+  text-align: center;
+}
+
+.score-container p {
+  color: #f7f7f7;
+  font-size: 4rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+
+.New {
+  margin: 60px 25px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.New-Rules {
+  display: none;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.btn-a {
+  border-radius: 10px;
+  background: linear-gradient(145deg, #1f242c, #242b34);
+  box-shadow:  12px 12px 24px #1d222a,
+             -12px -12px 24px #272e38;
+  border: none;
+  font-size: 16px;
+  font-family: inherit;
+  padding:  10px 25px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.btn-a:active {
+  transform: scale(0.9);
+}
+.btn-a:focus {
+  outline: none;
+}
+
+.btn-b {
+  border-radius: 10px;
+  background: linear-gradient(145deg, #1f242c, #242b34);
+  box-shadow:  12px 12px 24px #1d222a,
+             -12px -12px 24px #272e38;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  font-family: inherit;
+  padding:  10px 25px;
+  margin-bottom: 35px;
+  text-transform: uppercase;
+}
+
+.btn-b:active {
+  transform: scale(0.9);
+}
+
+.btn-b:focus {
+  outline: none;
+}
+
+.btn h4{
+  color: #fff;
+  font-weight: 700;
+}
+
+.close {
+  display: none;
+  margin-top: 35px;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  border-radius: 50%;
+  background: linear-gradient(145deg, #1f242c, #242b34);
+  box-shadow:  7px 7px 32px #161a20,
+               -7px -7px 32px #2e3642;
+}
+
+.close:active{
+    transform: scale(0.8);
+}
+.close:focus {
+  outline: none;
+}
+
+.game {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  max-width: 100%;
+  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  transform: scale(0.8);
+}
+
+.btn-circle{
+  border-radius: 50%;
+  border-color: transparent;
+  cursor: pointer;
+  background: linear-gradient(145deg, #242b34, #1f242c);
+  box-shadow:  14px 14px 28px #1b2027,
+             -14px -14px 28px #29303b;
+  height: 150px;
+  width: 150px;
+  margin: 10px 25px;
+}
+
+.btn-circle:focus {
+  outline: none;
+}
+.btn-circle:active {
+  transform: scale(0.7);
+}
+
+.btn-all {
+  background: linear-gradient(145deg, #242b34, #1f242c);
+  box-shadow:  14px 14px 28px #1b2027,
+             -14px -14px 28px #29303b;
+}
+
+.btn-circle .wrapper {
+  border-radius: 50%;
+  background: linear-gradient(145deg, #1f242c, #242b34);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+  width: 120px;
+}
+
+.selection {
+  display: none;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 1000px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.selection .btn-circle {
+  margin : 50px 100px;
+  transform: scale(1);
+}
+
+.btn {
+  border: none;
+  border-radius: 5px;
+  background: linear-gradient(145deg, #ffffff, #e6e6e6);
+  box-shadow:  12px 12px 24px #1d222a,
+             -12px -12px 24px #272e38;
+  color: hsl(229, 25%, 31%);
+  font-size: 18px;
+  font-weight: 700;
+  font-family: inherit;
+  padding:  10px 25px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.btn:active {
+  transform: scale(0.8);
+}
+
+.big-text{
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin: 15px 0 20px;
+  line-height: 0.8;
+  text-transform: uppercase;
+}
+
+
+// New Addition
+
+
+
+//Responsiveness
+
+@media (max-width: 400px) {
+  .container{
+    transform: scale(0.5);
+  }
+  .highscore-container{
+    transform: scale(0.5);
+  }
+  .New {
+    transform: scale(0.7);
+  }
+  .game {
+    justify-content: center;
+    transform: scale(0.4);
+  }
+  .selection {
+    transform: scale(0.8);
+  }
+}
+
+@media(max-width: 800px) {
+  .responsive_down {
+  order: 1;
+  }
+}

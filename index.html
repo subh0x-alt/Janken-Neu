@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, Paper, Scissors</title>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="script.js" defer></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+          <h1>
+            <span>Rock</span>
+            <span>Paper</span>
+            <span>Scissors</span>
+          </h1>
+          <div class="score-container">
+            <h4>Score</h4>
+              <p id="Score">0</p>
+          </div>
+        </header>
+    </div>
+      <div class="game" id="game">
+        <button class="btn-circle btn-all pick" data-choice = "paper">
+          <span class="wrapper">
+            <img src="icon-paper.svg" alt="paper icon">
+          </span></button>
+        <button class="btn-circle btn-all pick" data-choice = "scissors">
+          <span class="wrapper">
+            <img src="icon-scissors.svg" alt="scissors icon">
+          </span></button>
+        <button class="btn-circle btn-all pick" data-choice = "rock">
+          <span class="wrapper">
+            <img src="icon-rock.svg" alt="rock icon">
+          </span></button>
+        </div>
+        <div class="selection" id="selection">
+          <div>
+            <h2>You Picked</h2>
+              <button class="btn-circle btn-paper" id="user_select">
+                <span class="wrapper">
+                  <img src="icon-paper.svg" alt="paper icon">
+                </span></button>
+          </div>
+        <div class="responsive_down">
+          <p class="big-text">You <span id="winner">win</span></p>
+            <button class="btn" id="reset">Play Again</button>
+        </div>
+        <div>
+          <h2>The Bot Picked</h2>
+            <button class="btn-circle btn-rock" id="computer_select">
+              <span class="wrapper">
+              <img src="icon-rock.svg" alt="rock icon">
+              </span></button></div>
+        </div>
+    <div class="New">
+      <button class="btn-a"><h4><a href="/" style = "color:white;text-decoration:none">Reset</a></h4></button>
+    </div>
+    <div class="New">
+      <button class="btn-b" id="rulesopen"><h4>Scoring Criteria</h4></button>
+      <div class="New-Rules" id="New-Rules"><h2>
+        <span>WIN :    +4</span>
+        <br>
+        <span>LOSE :    -1</span>
+        <br>
+        <span>DRAW :    0</span>
+      </h2>
+    </div>
+    <button class="close" id="close"><img src="close.svg" height=25px width=25px></button>
+    </div>
+  </body>
+</html>
