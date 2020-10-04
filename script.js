@@ -70,7 +70,7 @@ function checkWinner() {
     } else {
       //user Lost
       winner.innerText = 'lost'
-      updateScore(-1);
+      updateScore(-4);
     }
     //show
     main.style.display = 'none';
