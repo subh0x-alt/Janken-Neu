@@ -21,6 +21,10 @@ function updateVisitCount() {
 	})
 }
 
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("light-mode");}
+
 document.getElementById('rulesopen').addEventListener('click' , () => {
     newr.style.display = "flex";
     closer.style.display = "flex";
